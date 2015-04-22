@@ -2,12 +2,12 @@
  * Code developed by Mário Gomes (mariobrgomes91@gmail.com)
  * This code can't be replicated unless you contact the author with the intended purpose.	
  */
-package domain.plan;
+package domain.business.plan;
 
 import java.util.Set;
 
 import lombok.Data;
-import domain.coverage.Coverage;
+import domain.business.coverage.Coverage;
 
 @Data
 public abstract class Plan {

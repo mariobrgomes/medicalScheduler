@@ -2,14 +2,16 @@
  * Code developed by Mário Gomes (mariobrgomes91@gmail.com)
  * This code can't be replicated unless you contact the author with the intended purpose.	
  */
-package domain.person;
+package domain.business.plan;
 
+import domain.business.address.CityList;
 import lombok.Data;
-import domain.plan.Plan;
+
 
 @Data
-public class InsuredPerson extends Person {
+public class NationalPlan extends Plan {
 	
-	private Plan plan;
-	private 
+	private CityList city;
+	private String registerNb;
+	
 }

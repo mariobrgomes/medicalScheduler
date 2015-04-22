@@ -2,15 +2,17 @@
  * Code developed by Mário Gomes (mariobrgomes91@gmail.com)
  * This code can't be replicated unless you contact the author with the intended purpose.	
  */
-package domain.person;
+package domain.business.person;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
 import lombok.Data;
 
 @Data
-@Entity
-@Table(name = "PERSON")
+@MappedSuperclass
 public abstract class Person {
 
 	@Id @GeneratedValue
@@ -23,7 +25,7 @@ public abstract class Person {
 	@Column(name = "last_name")
 	private String lastName;
 	
-	@Column(name = "salary")
+	@Column(name = "email")
 	private String email;
 	
 	@Column (name = "gender") 
